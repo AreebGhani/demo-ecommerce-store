@@ -1,0 +1,726 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+input {
+    border: none;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    padding: 0px 0.362px 9.083px 0px;
+    gap: 14.148px;
+    background-color: #FFF;
+}
+
+.header .top {
+    background-color: #36B7AF;
+    height: 68.384px;
+    padding: 10.611px 10.821px 3.537px 11.358px;
+    width: 100%;
+}
+
+.header .top .content {
+    padding: 11.79px;
+    gap: 5.895px;
+}
+
+.header .top .content .topbarIcon {
+    width: 18.865px;
+    height: 18.865px;
+}
+
+.header .top .content .topbarText {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16.507px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.297px;
+    letter-spacing: 0.236px;
+}
+
+.header .top .content .socialIcons {
+    gap: 12.484px;
+}
+
+.header .navbar {
+    width: 100%;
+    height: 68.384px;
+    padding: 0px 20.044px 0px 44.803px;
+    gap: 47.162px;
+}
+
+.header .navbar .logo {
+    height: 68.384px;
+    padding: 15.328px 41.48px 15.057px 0px;
+}
+
+.header .navbar .logo h1 {
+    color: #252B42;
+    font-family: Montserrat;
+    font-size: 28.297px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37.729px;
+    letter-spacing: 0.118px;
+}
+
+.header .navbar nav {
+    height: 78.384px;
+    padding: 2.358px 0px;
+    gap: 555.327px;
+}
+
+.header .navbar nav ul li a {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16.507px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.297px;
+    letter-spacing: 0.236px;
+    text-decoration: none;
+    color: #737373;
+}
+
+.header .navbar nav ul .active {
+    color: #23A6F0 !important;
+}
+
+.header .navbar nav ul .dropdownMenu>a {
+    color: #252B42;
+    font-weight: 500;
+}
+
+.header .navbar nav ul li a .arrowDown {
+    fill: #252B42;
+}
+
+.header .navbar .otherLinks {
+    height: 63.384px;
+    padding: 17.686px;
+    gap: 5.895px;
+}
+
+.header .navbar .otherLinks .text {
+    color: #23A6F0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16.507px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.297px;
+    letter-spacing: 0.236px;
+}
+
+.header .navbar .otherLinks div span {
+    color: #23A6F0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14.148px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.865px;
+    letter-spacing: 0.236px;
+}
+
+.hero {
+    height: 870px;
+    padding: 26px 90px 25px 90px;
+    background-color: #FFF;
+}
+
+.hero .main {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.hero .main .banner {
+    width: 605.822px;
+    padding-top: 22.168px;
+    gap: 6.702px;
+}
+
+.hero .main .banner .content {
+    width: 505.822px;
+    padding: 22.168px;
+    gap: 6.702px;
+}
+
+.hero .main .banner .content .total {
+    color: #2DC071;
+    font-family: Montserrat;
+    font-size: 18.764px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.168px;
+    letter-spacing: 0.268px;
+}
+
+.hero .main .banner .content .title {
+    color: #252B42;
+    font-family: Newsreader;
+    font-size: 33.613px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47.016px;
+    letter-spacing: 0.268px;
+    text-transform: uppercase;
+}
+
+.hero .main .banner .content .button {
+    color: #36B7AF;
+    font-family: Montserrat;
+    font-size: 18.764px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.168px;
+    letter-spacing: 0.268px;
+    text-transform: uppercase;
+}
+
+.sell-banner {
+    margin-top: 130px;
+    width: 100%;
+    height: 346px;
+    flex-shrink: 0;
+    opacity: 1;
+    background: url('./assets/img/image-8.png'), black 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sell-banner .content {
+    padding: 80px;
+    gap: 30px;
+    border: 3px solid #ECECEC;
+    border-left: none;
+    border-right: none;
+}
+
+.sell-banner .content {
+    color: #FFF;
+    text-align: center;
+    font-family: Newsreader;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 5.2px;
+}
+
+.featured {
+    padding-top: 100px;
+    background: #FAFAFA;
+}
+
+.featured .content .title {
+    color: #737373;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 19.516px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44.274px;
+    letter-spacing: 0.295px;
+}
+
+.featured .content .subtitle {
+    color: #252B42;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25.419px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47.225px;
+    letter-spacing: 0.148px;
+}
+
+.featured .content .paragraph {
+    color: #737373;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15.661px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.516px;
+    letter-spacing: 0.295px;
+}
+
+.featured .products {
+    padding: 100px 250px 100px 250px;
+}
+
+.featured .products .one {
+    height: 770px;
+    width: 100%;
+    background: url('./assets/img/image-6.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.featured .products .one .overlay {
+    background: rgba(6, 6, 6, 0.48);
+}
+
+.featured .products .one .overlay .content {
+    padding: 80px 50px 50px 50px;
+}
+
+.featured .products .one .overlay .content .title {
+    color: #FFF;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 32.83px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49.244px;
+    letter-spacing: 0.33px;
+}
+
+.featured .products .one .overlay .content .paragraph {
+    margin-top: 20px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20.5px;
+    letter-spacing: 0.33px;
+}
+
+
+.featured .products .one .overlay .content .icons {
+    margin-top: 440px;
+}
+
+.featured .products .one .overlay .content .icons .circle {
+    display: flex;
+    width: 37.759px;
+    height: 37.759px;
+    padding: 15.44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 87.062px;
+    background: #FFF;
+}
+
+
+.featured .products .two {
+    background: url('./assets/img/card-cover-5.png'), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 223px;
+    height: 240px;
+    flex-shrink: 0;
+}
+
+.featured .products .three {
+    background: url('./assets/img/card-cover-6.png'), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 223px;
+    height: 240px;
+    flex-shrink: 0;
+}
+
+.featured .products .four {
+    background: url('./assets/img/card-cover-7.png'), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 223px;
+    height: 240px;
+    flex-shrink: 0;
+}
+
+.featured .products .button {
+    display: inline-flex;
+    padding: 14px 25px 0px 25px;
+    justify-content: center;
+    align-items: center;
+    background: #36B7AF;
+}
+
+.featured .products .button p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13.012px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10.518px;
+    letter-spacing: 0.119px;
+}
+
+.popular {
+    padding-top: 40px;
+    background: #FAFAFA;
+}
+
+.popular .bg-img {
+    background: url('./assets/img/image-9.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+.popular .content {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 44.088px;
+    flex-shrink: 0;
+    background: #FAFAFA;
+}
+
+.popular .content .title {
+    color: #252B42;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25.27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17.027px;
+    letter-spacing: 0.147px;
+}
+
+.popular .content .paragraph {
+    color: #737373;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13.574px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.392px;
+    letter-spacing: 0.294px;
+    width: 70%;
+    margin-top: -30px;
+}
+
+.popular .content .image {
+    background: url('./assets/img/image-10.png'), lightgray 65.525px -74px / 69.7% 92.773% no-repeat;
+    width: 312px;
+    height: 377px;
+}
+
+.popular .content .caption {
+    color: #252B42;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15.574px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.27px;
+    letter-spacing: 0.294px;
+    margin-top: -30px;
+}
+
+.popular .content .price {
+    color: #BDBDBD;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13.514px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.27px;
+    letter-spacing: 0.147px;
+}
+
+.popular .content .discount {
+    color: #23856D;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13.514px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.27px;
+    letter-spacing: 0.147px;
+}
+
+.best-seller {
+    padding-top: 100px;
+}
+
+.best-seller .content .title {
+    color: #737373;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 19.516px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44.274px;
+    letter-spacing: 0.295px;
+}
+
+.best-seller .content .subtitle {
+    color: #252B42;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25.419px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47.225px;
+    letter-spacing: 0.148px;
+}
+
+.best-seller .content .paragraph {
+    color: #737373;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15.661px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.516px;
+    letter-spacing: 0.295px;
+}
+
+.best-seller .products {
+    margin-top: 80px;
+    padding: 0 100px;
+}
+
+.best-seller .products .one {
+    background: url('./assets/img/image-11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+.best-seller .products .two {
+    background: url('./assets/img/image-12.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+.best-seller .products .three {
+    background: url('./assets/img/image-13.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+.best-seller .products .four {
+    background: url('./assets/img/image-14.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+.best-seller .products .content {
+    display: flex;
+    padding: 26.895px 26.895px 41.653px 26.895px;
+    flex-direction: column;
+    align-items: center;
+    gap: 14.758px;
+    align-self: stretch;
+}
+
+.best-seller .products .content .title {
+    color: #252B42;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15.613px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.419px;
+    letter-spacing: 0.148px;
+    width: 70%;
+}
+
+
+.best-seller .products .content .subtitle {
+    color: #737373;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13.661px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.419px;
+    letter-spacing: 0.295px;
+    text-transform: capitalize;
+}
+
+.best-seller .products .content .price {
+    color: #BDBDBD;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13.514px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.27px;
+    letter-spacing: 0.147px;
+}
+
+.best-seller .products .content .discount {
+    color: #23856D;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13.514px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.27px;
+    letter-spacing: 0.147px;
+}
+
+.brands {
+    margin-top: 50px;
+    padding: 0 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.brands .card {
+    width: 300px;
+    height: 150px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands .card .off {
+    color: #737373;
+    font-family: Montserrat;
+    font-size: 15.786px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.919px;
+    letter-spacing: 0.283px;
+}
+
+.brands .card .text {
+    color: #252B42;
+    font-family: Miama;
+    font-size: 20.919px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.225px;
+    letter-spacing: 0.141px;
+}
+
+.brands .card .button {
+    color: #252B42;
+    font-family: Montserrat;
+    font-size: 12.959px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.613px;
+    letter-spacing: 0.283px;
+}
+
+.slider {
+    margin-top: 100px;
+    padding: 0 100px;
+}
+
+.slider .bg-img {
+    background: url('./assets/img/image-15.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    flex-shrink: 0;
+}
+
+.slider .bg-img .title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29.139px;
+    letter-spacing: 0.284px;
+}
+
+.slider .bg-img .subtitle {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29.139px;
+    letter-spacing: 0.284px;
+}
+
+.slider .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ECECEC;
+}
+
+.slider .topbar .title {
+    color: #252B42;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18.76px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24.139px;
+    letter-spacing: 0.142px;
+}
+
+.slider .topbar .category {
+    display: flex;
+}
+
+.slider .topbar .category div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #737373;
+    font-weight: 700;
+}
+
+.slider .topbar .category .active {
+    color: #23A6F0;
+}
+
+.slider .topbar .circle {
+    display: flex;
+    height: 48.279px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 50%;
+    border: 1.422px solid #BDBDBD;
+}
+
+.slider .products {
+    display: flex;
+    padding: 34.139px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15.337px;
+}

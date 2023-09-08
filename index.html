@@ -1,671 +1,430 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <title>Ecommerce Store</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C500%2C700"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C500%2C700"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader%3A400%2C700"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Miama%3A400"/>
-  <link rel="stylesheet" href="./styles/landing-page-ecommerce-store.css"/>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Ecommerce Store</title>
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C500%2C700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C500%2C700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader%3A400%2C700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Miama%3A400" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-<div class="landing-page-ecommerce-store-nbj">
-  <div class="desktop-shop-header-5-Q7K">
-    <div class="navbar-style-8-navbar-light-UmP">
-      <div class="navbar-dark-o2y">
-        <div class="collapse-navbar-collapse-FvZ">
-          <div class="container-Cau">
-            <div class="row-wS1">
-              <div class="col-md-4-TQM">
-                <div class="btn-sm-20-oDK">
-                  <img class="icn-settings-icn-xs-6iD" src="./assets/icn-settings-icn-xs-9Bo.png"/>
-                  <p class="h6-o6q">(225) 555-0118</p>
+    <header class="d-flex flex-column align-items-center header">
+        <!-- Top Bar -->
+        <div class="d-flex justify-content-between align-items-start flex-shrink-0 top">
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center content">
+                    <img class="topbarIcon" src="./assets/svg/phone.svg" alt="phone">
+                    <span class="topbarText">
+                        (225) 555-0118
+                    </span>
                 </div>
-                <div class="btn-sm-20-f93">
-                  <img class="icn-settings-icn-xs-yvR" src="./assets/icn-settings-icn-xs-L9w.png"/>
-                  <p class="h6-JC1">Brandname@example.com</p>
+                <div class="d-flex align-items-center content">
+                    <img class="topbarIcon" src="./assets/svg/mail.svg" alt="mail">
+                    <span class="topbarText">
+                        Brandname@example.com
+                    </span>
                 </div>
-              </div>
-              <div class="col-md-4-CYH">Follow Us  and get a chance to win 80% off</div>
-              <div class="col-md-4-EUy">
-                <p class="h6-9M3">Follow Us  :</p>
-                <div class="social-media-F9B">
-                  <img class="a-NDo" src="./assets/a.png"/>
-                  <img class="a-uUd" src="./assets/a-yEy.png"/>
-                  <img class="a-q7P" src="./assets/a-VDK.png"/>
-                  <img class="a-ZZB" src="./assets/a-auP.png"/>
+            </div>
+            <div class="d-flex align-items-center content">
+                <span class="topbarText">
+                    Follow Us and get a chance to win 80% off
+                </span>
+            </div>
+            <div class="d-flex align-items-center content">
+                <span class="topbarText">
+                    Follow Us :
+                </span>
+                <span class="d-flex pl-2 pr-0 justify-content-center align-items-start socialIcons">
+                    <img class="topbarIcon" src="./assets/svg/instagram.svg" alt="instagram">
+                    <img class="topbarIcon" src="./assets/svg/youtube.svg" alt="youtube">
+                    <img class="topbarIcon" src="./assets/svg/facebook.svg" alt="facebook">
+                    <img class="topbarIcon" src="./assets/svg/twitter.svg" alt="twitter">
+                </span>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <div class="d-flex justify-content-end align-items-start navbar">
+            <!-- Logo -->
+            <div class="d-flex align-items-center logo">
+                <h1>Brand Name</h1>
+            </div>
+            <!-- Nav Items -->
+            <nav class="d-flex justify-content-center align-items-center">
+                <ul class="list-unstyled d-flex">
+                    <li class="mx-3"><a class="active" href="#">Home</a></li>
+                    <li class="mx-3 dropdownMenu"><a href="#">Shop<img class="arrowDown ml-1"
+                                src="./assets/svg/arrowdown.svg" alt="dropdown"></a></li>
+                    <li class="mx-3"><a href="#">About</a></li>
+                    <li class="mx-3"><a href="#">Blog</a></li>
+                    <li class="mx-3"><a href="#">Contact</a></li>
+                    <li class="mx-3"><a href="#">Pages</a></li>
+                </ul>
+            </nav>
+            <!-- Other Links -->
+            <div class="d-flex align-items-center otherLinks">
+                <img src="./assets/svg/user.svg" alt="user">
+                <span class="text">Login / Register</span>
+                <div class="d-flex ml-2">
+                    <span class="mx-2">
+                        <img src="./assets/svg/search.svg" alt="search">
+                    </span>
+                    <span class="mx-2">
+                        <img src="./assets/svg/cart-blue.svg" alt="cart"> 1
+                    </span>
+                    <span class="mx-2">
+                        <img src="./assets/svg/like-blue.svg" alt="like"> 1
+                    </span>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="navbar-light-GTb">
-        <div class="navbar-brand-PYD">BrandName</div>
-        <div class="auto-group-x3m1-4eM">
-          <div class="collapse-navbar-collapse-orq">
-            <div class="navbar-nav-7sX">
-              <div class="li-d5B">
-                <div class="a-ZDj">Home</div>
-              </div>
-              <div class="dropdown-FcM">
-                <div class="auto-group-pfhy-z49">
-                  <div class="dropdown-toggle-L81">
-                    <p class="category-qqT">Shop</p>
-                    <img class="vector-ZWZ" src="./assets/vector.png"/>
-                  </div>
-                  <div class="auto-group-ozif-JU9">
-                    <div class="li-FPP">
-                      <div class="a-bi9">About</div>
+    </header>
+    <!-- Hero -->
+    <section class="d-flex justify-content-center align-items-center align-self-stretch hero">
+        <div class="main">
+            <div class="row">
+                <div class="col-5">
+                    <div
+                        style="height: 823.5px; width: 100%; background: url('./assets/img/image-1.png'), lightgray 50% / cover no-repeat;">
+                        <div class="d-flex flex-column justify-content-center align-items-start banner">
+                            <div class="d-flex flex-column justify-content-center align-items-start content">
+                                <span class="total">99+</span>
+                                <span class="title">Luxury Bags</span>
+                                <span class="button">Shop Now</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="li-KPF">
-                      <div class="a-sQm">Blog</div>
-                    </div>
-                    <div class="li-zVP">
-                      <div class="a-jxm">Contact</div>
-                    </div>
-                    <div class="li-fbX">
-                      <div class="a-d2Z">Pages</div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="navbar-nav-vXT">
-              <div class="li-shb">
-                <div class="a-Rz1">
-                  <div class="btn-32-Cjs">
-                    <img class="icn-settings-icn-xs-LLH" src="./assets/icn-settings-icn-xs-9cV.png"/>
-                    <p class="login-register-fNZ">Login / Register</p>
-                  </div>
-                </div>
-              </div>
-              <img class="li-Aq7" src="./assets/li.png"/>
-              <div class="auto-group-a6vs-Kxu">
-                <div class="li-fms">
-                  <div class="a-1aq">
-                    <div class="btn-32-a89">
-                      <img class="icn-settings-icn-xs-JZw" src="./assets/icn-settings-icn-xs-Rkd.png"/>
-                      <p class="item-1-R8m">1</p>
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col-12">
+                            <div
+                                style="height: 400px; width: 100%; background: url('./assets/img/image-5.png'), lightgray 50% / cover no-repeat;">
+                                <div class="d-flex flex-column justify-content-center align-items-start banner">
+                                    <div class="d-flex flex-column justify-content-center align-items-start content">
+                                        <span class="total">99+</span>
+                                        <span class="title"
+                                            style="font-weight: 700; font-size: 23px;">Accessories</span>
+                                        <span class="button">Shop Now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="li-8J5">
-                  <div class="a-5z1">
-                    <div class="btn-32-3fw">
-                      <img class="icn-settings-icn-xs-B1T" src="./assets/icn-settings-icn-xs.png"/>
-                      <p class="item-1-hkV">1</p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div
+                                style="height: 400px; width: 100%; background: url('./assets/img/image-3.png'), lightgray 50% / cover no-repeat;">
+                                <div class="d-flex flex-column justify-content-center align-items-start banner">
+                                    <div class="d-flex flex-column justify-content-center align-items-start content">
+                                        <span class="total">99+</span>
+                                        <span class="title" style="font-weight: 700; font-size: 23px;">Watches</span>
+                                        <span class="button">Shop Now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div
+                                style="height: 400px; width: 100%; background: url('./assets/img/image-2.png'), lightgray 50% / cover no-repeat;">
+                                <div class="d-flex flex-column justify-content-center align-items-start banner">
+                                    <div class="d-flex flex-column justify-content-center align-items-start content">
+                                        <span class="total">99+</span>
+                                        <span class="title" style="font-weight: 700; font-size: 23px;">Jewellery</span>
+                                        <span class="button">Shop Now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="desktop-shop-cards-22-N5w">
-      <div class="container-Hyb">
-        <div class="row-rG1">
-          <div class="col-md-4-QoK">
-            <div class="card-item-MTf">
-              <div class="media-bg-cover-KQV">
-                <div class="filter-Gad">
-                  <img class="image-1-CjB" src="./assets/image-1.png"/>
+    </section>
+    <!-- Sell With Us Banner -->
+    <section class="sell-banner">
+        <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="content">
+                <div class="title">SELL YOUR LUXURY PRODUCTS WITH US</div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured -->
+    <section class="featured">
+        <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="content">
+                <div class="title">Featured Products</div>
+                <div class="subtitle">MOST SELLING BRAND</div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="row">
+                <div class="col-7">
+                    <div class="one">
+                        <div class="w-100 h-100 overlay">
+                            <div class="content">
+                                <div class="title">Women Branded Watches</div>
+                                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                    mattis rhoncus leo,</div>
+                                <div class="icons d-flex">
+                                    <span class="circle mx-2">
+                                        <img src="./assets/svg/like.svg" alt="like" width="20" height="20">
+                                    </span>
+                                    <span class="circle mx-2">
+                                        <img src="./assets/svg/cart.svg" alt="cart" width="20" height="20">
+                                    </span>
+                                    <span class="circle mx-2">
+                                        <img src="./assets/svg/view.svg" alt="view" width="20" height="20">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-content-LqP">
-                  <p class="h6-rYq">99+</p>
-                  <p class="h6-nhP">Luxury Bags</p>
-                  <p class="h6-7zZ">Shop Now</p>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="two d-flex align-items-end justify-content-center pb-3">
+                                <span class="button">
+                                    <p>CITIZEN</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-4">
+                            <div class="three d-flex align-items-end justify-content-center pb-3">
+                                <span class="button">
+                                    <p>CITIZEN</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-4">
+                            <div class="four d-flex align-items-end justify-content-center pb-3">
+                                <span class="button">
+                                    <p>CITIZEN</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="frame-1-1q3">
-            <div class="col-md-4-yWy">
-              <div class="card-item-Kaq">
-                <div class="media-bg-cover-UyX">
-                  <div class="card-cover-6-Eho">
-                    <div class="card-cover-6-Eho-bg">
-                    </div>
-                  </div>
-                  <div class="filter-5iR">
-                    <img class="image-5-Dpd" src="./assets/image-5.png"/>
-                  </div>
-                  <div class="card-content-Mvq">
-                    <p class="h6-UkZ">99+</p>
-                    <p class="h6-DCM">Accessories</p>
-                    <p class="h6-ieu">Shop Now</p>
-                  </div>
+        </div>
+    </section>
+    <!-- Most Popular -->
+    <section class="popular">
+        <div>
+            <div class="row">
+                <div class="col-6 bg-img">
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4-SL1">
-              <div class="card-item-B2h">
-                <div class="media-bg-cover-6vM">
-                  <img class="card-cover-6-Tku" src="./assets/card-cover-6.png"/>
-                  <div class="filter-bcD">
-                    <img class="image-3-LZo" src="./assets/image-3.png"/>
-                  </div>
-                  <div class="card-content-5nH">
-                    <p class="h6-1vq">99+</p>
-                    <p class="h6-9GM">Watches</p>
-                    <p class="h6-fkV">Shop Now</p>
-                  </div>
+                <div class="col-6 content">
+                    <h1 class="title">
+                        MOST POPULAR BAGS
+                    </h1>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis rhoncus leo, quis
+                        laoreet nunc dictum quis.
+                    </p>
+                    <img style="margin-top: -50px;" src="./assets/img/image-10.png" alt="bag" width="170" height="250">
+                    <div class="caption">WOMEN BRANDED BAG</div>
+                    <div style="margin-top: -30px;">
+                        <span class="price mr-1">$16.48</span>
+                        <span class="discount ml-1">$6.48</span>
+                    </div>
                 </div>
-              </div>
-              <div class="card-item-bu3">
-                <div class="media-bg-cover-YJV">
-                  <div class="filter-UT3">
-                    <img class="image-4-Ex1" src="./assets/image-4.png"/>
-                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- Best Seller -->
+    <section class="best-seller">
+        <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="content">
+                <div class="title">Featured Products</div>
+                <div class="subtitle">BESTSELLER PRODUCTS</div>
+                <div class="paragraph">Problems trying to resolve the conflict between </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="row">
+                <div class="col-3">
+                    <div class="one"></div>
+                    <div class="content">
+                        <div class="title">
+                            Calvin Klein Women's Bag
+                        </div>
+                        <div class="subtitle">
+                            Bag 2 shoulder handles
+                        </div>
+                        <div>
+                            <span class="price mr-1">$16.48</span>
+                            <span class="discount ml-1">$6.48</span>
+                        </div>
+                    </div>
                 </div>
-                <img class="image-2-93P" src="./assets/image-2.png"/>
-                <div class="card-content-qwo">
-                  <p class="h6-ADP">99+</p>
-                  <p class="h6-gxR">Jewellery</p>
-                  <p class="h6-2Fb">Shop Now</p>
+                <div class="col-3">
+                    <div class="two"></div>
+                    <div class="content">
+                        <div class="title">
+                            Calvin Klein Women's Bag
+                        </div>
+                        <div class="subtitle">
+                            Bag 2 shoulder handles
+                        </div>
+                        <div>
+                            <span class="price mr-1">$16.48</span>
+                            <span class="discount ml-1">$6.48</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="auto-group-dtbu-Jyo">
-    <div class="rectangle-2-cjb">
-    </div>
-    <div class="group-1-YdF">
-      <div class="container-fC5">
-        <div class="row-Cxh">
-          <div class="main-content-wQV">
-            <p class="h2-feature-section1-VS1">SELL YOUR LUXURY PRODUCTS WITH US</p>
-            <p class="paragraph-oxV">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis rhoncus leo,
-            <br/>
-            quis laoreet nunc dictum quis. Nulla consequat sit amet nunc vel tristique.
-            </p>
-          </div>
-          <div class="button-md-XtV">SELL WITH US NOW</div>
-          <p class="h2-feature-section1-PA1">TERMS AND CONDITIONS APPLY</p>
-        </div>
-      </div>
-    </div>
-    <img class="image-7-TvZ" src="./assets/image-7.png"/>
-    <img class="image-8-nxq" src="./assets/image-8.png"/>
-    <img class="image-9-j7P" src="./assets/image-9.png"/>
-    <div class="card-content-G7K">CITIZEN</div>
-    <div class="card-content-izu">CITIZEN</div>
-    <div class="card-content-boo">CITIZEN</div>
-    <div class="main-content-5DB">
-      <p class="h2-section-title-ndP">Featured Products</p>
-      <p class="h3-section-title-W3b">MOST SELLING BRAND</p>
-      <p class="paragraph-RgM">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="group-2-Z1s">
-      <img class="image-6-soF" src="./assets/image-6.png"/>
-      <div class="rectangle-3-1uT">
-      </div>
-      <p class="h5-product-title-ZRB">Women Branded Watches</p>
-      <p class="h5-product-title-FJ1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis rhoncus leo,</p>
-      <div class="product-actions-wRj">
-        <img class="like-GD7" src="./assets/like.png"/>
-        <img class="basket-PYd" src="./assets/basket.png"/>
-        <img class="like-vYZ" src="./assets/like-mL5.png"/>
-      </div>
-    </div>
-  </div>
-  <div class="row-fFF">
-    <div class="col-md-8-ymj">
-      <div class="unsplash-x5bwooeo4cw-ijK">
-        <img class="image-14-rqX" src="./assets/image-14.png"/>
-      </div>
-    </div>
-    <div class="col-md-4-PKf">
-      <div class="product-card-icq">
-        <div class="auto-group-rd51-fY5">
-          <p class="h5-product-title-oPP">MOST POPULAR BAGS</p>
-          <p class="paragraph-product-description-iFT">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis rhoncus leo, quis laoreet nunc dictum quis.</p>
-        </div>
-        <div class="fixed-height-Qe5">
-          <div class="printed-summer-dress-4-1-kC9">
-          </div>
-        </div>
-        <p class="link-product-category-RZB">WOMEN BRANDED BAG</p>
-        <div class="prices-vF3">
-          <p class="h5-price-4MF">$16.48</p>
-          <p class="h5-price-aqP">$6.48</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="desktop-product-cards-10-Q3j">
-    <div class="container-iaD">
-      <div class="row-fkM">
-        <div class="main-content-q2Z">
-          <p class="h2-section-title-Zz9">Featured Products</p>
-          <p class="h3-section-title-Vcu">BESTSELLER PRODUCTS</p>
-          <p class="paragraph-dDK">Problems trying to resolve the conflict between </p>
-        </div>
-      </div>
-      <div class="row-Mf7">
-        <div class="product-card-hU5">
-          <div class="fixed-height-pYh">
-            <div class="product-cover-5-NKK">
-              <img class="image-10-jQm" src="./assets/image-10.png"/>
-            </div>
-          </div>
-          <div class="frame-3-Fe1">
-            <p class="h5-product-title-yK7">Calvin Klein Women&#39;s Bag</p>
-            <p class="link-product-category-H4u">Bag 2 shoulder handles</p>
-            <div class="prices-bLV">
-              <p class="h5-price-Xzq">$16.48</p>
-              <p class="h5-price-rnD">$6.48</p>
-            </div>
-          </div>
-        </div>
-        <div class="product-card-xqF">
-          <div class="product-card-7TF">
-            <div class="fixed-height-ei5">
-              <div class="product-cover-5-b7X">
-                <img class="image-11-YoT" src="./assets/image-11.png"/>
-              </div>
-            </div>
-            <div class="frame-3-g8y">
-              <p class="h5-product-title-DPo">Calvin Klein Women&#39;s Bag</p>
-              <p class="link-product-category-vJD">Bag 2 shoulder handles</p>
-              <div class="prices-3Nq">
-                <p class="h5-price-ynH">$16.48</p>
-                <p class="h5-price-hiH">$6.48</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-card-DAq">
-          <div class="product-card-mCM">
-            <div class="fixed-height-W9w">
-              <div class="product-cover-5-qT7">
-                <img class="image-12-zqo" src="./assets/image-12.png"/>
-              </div>
-            </div>
-            <div class="frame-3-7vR">
-              <p class="h5-product-title-3ZB">Calvin Klein Women&#39;s Bag</p>
-              <p class="link-product-category-Z1j">Bag 2 shoulder handles</p>
-              <div class="prices-fKf">
-                <p class="h5-price-Q2M">$16.48</p>
-                <p class="h5-price-w2H">$6.48</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-card-Sjj">
-          <div class="fixed-height-yjf">
-            <div class="product-cover-5-XmB">
-              <img class="image-13-h9s" src="./assets/image-13.png"/>
-            </div>
-          </div>
-          <div class="frame-3-cnd">
-            <p class="h5-product-title-LyX">Calvin Klein Women&#39;s Bag</p>
-            <p class="link-product-category-EZ7">Bag 2 shoulder handles</p>
-            <div class="prices-m3F">
-              <p class="h5-price-6LR">$16.48</p>
-              <p class="h5-price-okd">$6.48</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="auto-group-ceeb-KU5">
-    <div class="row-Rn1">
-      <div class="auto-group-dapz-yHj">
-        <div class="card-item-vCy">
-          <div class="media-bg-cover-4KB">
-            <img class="h5-baner-3-1-CAV" src="./assets/h5-baner-3-1.png"/>
-            <div class="filter-iuX">
-            </div>
-          </div>
-          <div class="card-content-Gw3">
-            <p class="h6-biR">25%OFF</p>
-            <p class="h2-8TT">
-            Unique 
-            <br/>
-            Style
-            </p>
-            <p class="h6-Fny">Explore Now</p>
-          </div>
-        </div>
-        <div class="card-item-igZ">
-          <div class="media-bg-cover-FwP">
-            <img class="h5-baner-1-1-muj" src="./assets/h5-baner-1-1.png"/>
-          </div>
-          <div class="card-content-v1w">
-            <p class="h6-eCq">25%OFF</p>
-            <p class="h2-Msw">
-            Unique 
-            <br/>
-            Style
-            </p>
-            <p class="h6-gQR">Explore Now</p>
-          </div>
-        </div>
-      </div>
-      <div class="card-item-bXP">
-        <div class="media-bg-cover-9Yu">
-          <div class="h5-baner-1-1-4fs">
-          </div>
-        </div>
-        <div class="card-content-ZMj">
-          <p class="h6-t97">25%OFF</p>
-          <p class="h2-DhB">
-          Unique 
-          <br/>
-          Style
-          </p>
-          <p class="h6-953">Explore Now</p>
-        </div>
-      </div>
-    </div>
-    <div class="row-rVF">
-      <div class="col-md-4-QFs">
-        <div class="card-item-wWh">
-          <div class="media-bg-cover-Vo7">
-            <div class="card-cover-5-3pd">
-              <img class="image-15-zUy" src="./assets/image-15.png"/>
-            </div>
-            <div class="card-content-KGM">
-              <p class="h6-3i9">Jewellery</p>
-              <p class="h6-BpM">99+ Products</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-6wK">
-        <div class="row-rfb">
-          <div class="main-content-Bhs">BEST SELLING</div>
-          <div class="navbar-style-3-navbar-light--3k5">
-            <div class="nav-C7B">
-              <div class="li-irD">
-                <div class="button-sm-HPX">Necklace</div>
-              </div>
-              <div class="li-AiD">
-                <div class="button-sm-8Q9">Rings</div>
-              </div>
-              <div class="li-tGq">
-                <div class="button-sm-F7P">Earrings</div>
-              </div>
-            </div>
-            <div class="nav-joF">
-              <img class="li-5cD" src="./assets/li-5pm.png"/>
-              <img class="li-RAH" src="./assets/li-Ead.png"/>
-            </div>
-          </div>
-        </div>
-        <div class="auto-group-zx7d-kTT">
-          <div class="rectangle-1-UuF">
-          </div>
-          <div class="tab-content-1eH">
-            <div class="tab-one-jqB">
-              <div class="row-6Qq">
-                <div class="product-card-cty">
-                  <div class="fixed-height-Y1w">
-                    <div class="product-cover-5-5nZ">
-                      <img class="image-16-R5j" src="./assets/image-16.png"/>
+                <div class="col-3">
+                    <div class="three"></div>
+                    <div class="content">
+                        <div class="title">
+                            Calvin Klein Women's Bag
+                        </div>
+                        <div class="subtitle">
+                            Bag 2 shoulder handles
+                        </div>
+                        <div>
+                            <span class="price mr-1">$16.48</span>
+                            <span class="discount ml-1">$6.48</span>
+                        </div>
                     </div>
-                  </div>
-                  <div class="frame-3-9XX">
-                    <p class="h5-product-title-tED">beautiful and luxury necklace</p>
-                    <p class="link-product-category-naV">jewelry stand neck</p>
-                    <div class="prices-WFb">
-                      <p class="h5-price-EhP">$16.48</p>
-                      <p class="h5-price-xNV">$6.48</p>
-                    </div>
-                  </div>
                 </div>
-                <div class="product-card-Tq3">
-                  <div class="fixed-height-yHb">
-                    <div class="product-cover-5-hUV">
-                      <img class="image-17-ePj" src="./assets/image-17.png"/>
+                <div class="col-3">
+                    <div class="four"></div>
+                    <div class="content">
+                        <div class="title">
+                            Calvin Klein Women's Bag
+                        </div>
+                        <div class="subtitle">
+                            Bag 2 shoulder handles
+                        </div>
+                        <div>
+                            <span class="price mr-1">$16.48</span>
+                            <span class="discount ml-1">$6.48</span>
+                        </div>
                     </div>
-                  </div>
-                  <div class="frame-3-NqX">
-                    <p class="h5-product-title-WRw">beautiful and luxury necklace</p>
-                    <p class="link-product-category-CpZ">jewelry stand neck</p>
-                    <div class="prices-inu">
-                      <p class="h5-price-TEh">$16.48</p>
-                      <p class="h5-price-mmB">$6.48</p>
-                    </div>
-                  </div>
                 </div>
-                <div class="product-card-VBP">
-                  <div class="fixed-height-Dt5">
-                    <div class="product-cover-5-YfT">
-                      <img class="image-17-6BB" src="./assets/image-17-s6H.png"/>
+            </div>
+        </div>
+    </section>
+    <!-- Brands -->
+    <section class="brands">
+        <div class="card">
+            <div class="row">
+                <div class="col-6">
+                    <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <div class="off">25%OFF</div>
+                        <div class="text">Unique Style</div>
+                        <div class="button">Explore Now</div>
                     </div>
-                  </div>
-                  <div class="frame-3-dS1">
-                    <p class="h5-product-title-Yos">beautiful and luxury necklace</p>
-                    <p class="link-product-category-rpZ">jewelry stand neck</p>
-                    <div class="prices-mAq">
-                      <p class="h5-price-Hus">$16.48</p>
-                      <p class="h5-price-1L5">$6.48</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="row-iVP">
-                <div class="product-card-FER">
-                  <div class="fixed-height-4hf">
-                    <div class="product-cover-5-1cu">
-                      <img class="image-17-joo" src="./assets/image-17-2mo.png"/>
-                    </div>
-                  </div>
-                  <div class="frame-3-Tzh">
-                    <p class="h5-product-title-CSV">beautiful and luxury necklace</p>
-                    <p class="link-product-category-ubo">jewelry stand neck</p>
-                    <div class="prices-Rq3">
-                      <p class="h5-price-me1">$16.48</p>
-                      <p class="h5-price-Bxd">$6.48</p>
-                    </div>
-                  </div>
+                <div class="col-6">
+                    <img src="./assets/img/card-img-1.png" alt="1" width="135" height="90">
                 </div>
-                <div class="product-card-utd">
-                  <div class="fixed-height-d3w">
-                    <div class="product-cover-5-mfw">
-                      <img class="image-17-WdX" src="./assets/image-17-8gq.png"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row">
+                <div class="col-6">
+                    <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <div class="off">25%OFF</div>
+                        <div class="text">Unique Style</div>
+                        <div class="button">Explore Now</div>
                     </div>
-                  </div>
-                  <div class="frame-3-fFX">
-                    <p class="h5-product-title-o6q">beautiful and luxury necklace</p>
-                    <p class="link-product-category-X2q">jewelry stand neck</p>
-                    <div class="prices-3G5">
-                      <p class="h5-price-NZF">$16.48</p>
-                      <p class="h5-price-h5j">$6.48</p>
-                    </div>
-                  </div>
                 </div>
-                <div class="product-card-pAM">
-                  <div class="fixed-height-ZNq">
-                    <div class="product-cover-5-7QM">
-                      <img class="image-17-efB" src="./assets/image-17-jGu.png"/>
-                    </div>
-                  </div>
-                  <div class="frame-3-Pcm">
-                    <p class="h5-product-title-KmK">beautiful and luxury necklace</p>
-                    <p class="link-product-category-SL9">jewelry stand neck</p>
-                    <div class="prices-xpH">
-                      <p class="h5-price-JdF">$16.48</p>
-                      <p class="h5-price-Rxm">$6.48</p>
-                    </div>
-                  </div>
+                <div class="col-6">
+                    <img src="./assets/img/card-img-2.png" alt="1" width="135" height="90">
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="auto-group-zwz1-vPj">
-    <div class="desktop-footer-6-TuT">
-      <div class="auto-group-knzd-NmX">
-        <div class="div-i4h">
-          <div class="container-SmP">
-            <div class="row-CEm">
-              <div class="col-md-3-9A1">
-                <div class="navbar-brand-TRb">BrandName</div>
-              </div>
-              <img class="col-md-3-jtu" src="./assets/col-md-3.png"/>
-            </div>
-          </div>
-        </div>
-        <div class="hr-sVK">
-        </div>
-      </div>
-      <div class="div-dDb">
-        <div class="container-ADX">
-          <div class="row-j1j">
-            <div class="col-md-2-sNq">
-              <p class="h5-pos">Top Categories</p>
-              <p class="link-9LM">
-              Handbags
-              <br/>
-              Shoes
-              <br/>
-              Watches
-              <br/>
-              Clothing
-              <br/>
-              Fine Jewelry
-              <br/>
-              Accessories
-              </p>
-            </div>
-            <div class="col-md-2-sn9">
-              <p class="h5-Qn5">Top Designer</p>
-              <p class="link-YNV">
-              Louis Vuitton
-              <br/>
-              Chanel
-              <br/>
-              Celine
-              <br/>
-              Gucci
-              <br/>
-              Saint Laurent
-              <br/>
-              Prada
-              <br/>
-              Christian Louboutin
-              </p>
-            </div>
-            <div class="col-md-2-UX3">
-              <p class="h5-q6h">Features</p>
-              <div class="div-ZoP">
-                <p class="link-vtq">User Analytic</p>
-                <p class="link-rXb">Live Chat</p>
-                <p class="link-ayP">Unlimited Support</p>
-              </div>
-            </div>
-            <div class="col-md-2-Kg5">
-              <p class="h5-5fF">Customer Service</p>
-              <p class="link-pMw">
-              Delivery &amp; Returns
-              <br/>
-              FAQs
-              <br/>
-              Terms &amp; Conditions
-              <br/>
-              Privacy Policy
-              </p>
-            </div>
-            <div class="col-md-4-kFb">
-              <p class="h5-tMo">Get In Touch</p>
-              <div class="custom-form-group-subscribe-2U1">
-                <div class="input-group-B61">
-                  <div class="form-control-input-style-1-KCD">
-                    <p class="your-email-T3X">Your Email</p>
-                    <div class="input-group-append-xky">
-                      <div class="btn-KLd">Subscribe</div>
+        <div class="card">
+            <div class="row">
+                <div class="col-6">
+                    <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <div class="off">25%OFF</div>
+                        <div class="text">Unique Style</div>
+                        <div class="button">Explore Now</div>
                     </div>
-                  </div>
                 </div>
-                <p class="form-text-9aZ">
-                We Are Here To Help You!
-                <br/>
-                +97142472985
-                <br/>
-                Monday to Sunday
-                <br/>
-                9 am to 9 pm (GST)
-                </p>
-              </div>
+                <div class="col-6">
+                    <img src="./assets/img/card-img-3.png" alt="1" width="135" height="90">
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="div-4Sd">
-        <div class="container-PUu">
-          <div class="row-LQ9">
-            <div class="col-md-7-JLy">All Right Reserved BRANDNAME 2023</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img class="desktop-clients-1-nG9" src="./assets/desktop-clients-1.png"/>
-    <div class="row-he1">
-      <div class="card-horizental-EP3">
-        <div class="flex-row-xpq">
-          <p class="item-1-ip1">1.</p>
-          <div class="div-eSm">
-            <p class="h6-feature-title-1o7">Easy to use</p>
-            <p class="small-feature-description-98d">Things on a very  small that you have any direct</p>
-          </div>
-        </div>
-      </div>
-      <div class="card-horizental-FhT">
-        <div class="flex-row-PHs">
-          <p class="item-2-Lyo">2.</p>
-          <div class="div-gGy">
-            <p class="h6-feature-title-eUh">Easy to use</p>
-            <p class="small-feature-description-Mtu">Things on a very  small that you have any direct</p>
-          </div>
-        </div>
-      </div>
-      <div class="auto-group-eds5-t89">
-        <div class="card-horizental-q3P">
-          <div class="flex-row-YyP">
-            <p class="item-3-7Wh">3.</p>
-            <div class="div-dzq">
-              <p class="h6-feature-title-16H">Easy to use</p>
-              <p class="small-feature-description-K6y">
-              Things on a very  small 
-              <br/>
-              that you have any direct
-              </p>
+    </section>
+    <!-- Slider -->
+    <section class="slider">
+        <div class="row">
+            <div class="col-4 bg-img">
+                <div class="p-3">
+                    <div class="title">
+                        Jewellery
+                    </div>
+                    <div class="subtitle">
+                        99+ Products
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="card-horizental-EDw">
-          <div class="flex-row-8q7">
-            <p class="item-4-Hi1">4.</p>
-            <div class="div-cEV">
-              <p class="h6-feature-title-mdB">Easy to use</p>
-              <p class="small-feature-description-HrR">
-              Things on a very  small 
-              <br/>
-              that you have any direct
-              </p>
+            <div class="col-7 ml-3">
+                <div class="topbar d-flex align-items-center">
+                    <div class="title">
+                        BEST SELLING
+                    </div>
+                    <div class="category">
+                        <div class="active mx-3">
+                            Necklace
+                        </div>
+                        <div class="mx-3">
+                            Rings
+                        </div>
+                        <div class="mx-3">
+                            Earrings
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="circle mr-1">
+                            <img src="./assets/svg/arrowleft.svg" alt="previous">
+                        </div>
+                        <div class="circle ml-1 active">
+                            <img src="./assets/svg/arrowright.svg" alt="next">
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
+
+</html>
