@@ -1097,6 +1097,10 @@ body {
         height: 400px !important;
     }
 
+    .hero .main .banner .content .title {
+        font-size: 33.613px !important;
+    }
+
     .sell-banner .content {
         padding: 80px !important;
     }
@@ -1139,6 +1143,14 @@ body {
         min-height: 440px !important;
     }
 
+    .best-seller .products {
+        padding: 0 100px !important;
+    }
+
+    .brands {
+        padding: 0 100px !important;
+    }
+
     .slider {
         padding-left: 120px !important;
     }
@@ -1165,9 +1177,6 @@ body {
 }
 
 @media screen and (max-width:1280px) {
-    .header .top .content .topbarText {
-        font-size: 14px;
-    }
 
     .header .navbar .logo h1 {
         font-size: 20px;
@@ -1217,6 +1226,10 @@ body {
         height: 200px;
     }
 
+    .hero .main .banner .content .title {
+        font-size: 23.613px;
+    }
+
     .sell-banner .content {
         padding: 40px;
     }
@@ -1264,7 +1277,7 @@ body {
     }
 
     .footer .content .form button {
-        padding: 5px 4px 5px 4px;
+        padding: 6px 5px 6px 5px;
     }
 
     .copyright {
@@ -1284,7 +1297,23 @@ body {
 }
 
 @media screen and (max-width:500px) {
+    .header .top .content .topbarText {
+        font-size: 12px;
+    }
+
     .featured .products {
         padding: 25px 62.5px 25px 62.5px;
+    }
+
+    .best-seller .products {
+        padding: 0 50px;
+    }
+
+    .brands {
+        padding: 0 50px;
+    }
+
+    .footer .content .form button {
+        padding: 7px 6px 7px 6px;
     }
 }
