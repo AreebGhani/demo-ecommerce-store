@@ -1,0 +1,72 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="menu" width="24" height="24" data-name="Menu Icon" viewBox="0 0 24 24">
+  <path fill="none" d="M0 0h24v24H0z" data-name="Path 24"/>
+  <path d="M4 18h15v-2H4zm0-5h15v-2H4zm0-7v2h15V6z" data-name="Path 25"/>
+<template xmlns="" id="transover-popup-template">
+  <style>
+    .pos_translation {
+      padding-bottom: 3px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .rtl {
+      direction: rtl;
+    }
+
+    main {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: initial;
+
+      background: #fcf7d9;
+      text-align: left;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #ccc;
+      box-shadow: rgba(0,0,0,0.2) 0px 2px 5px;
+      border-radius: 5px;
+      padding: 6px 8px 3px 8px;
+      position: fixed;
+      z-index: 2147483647;
+      top: -1500px;
+      left: 0;
+      box-sizing: content-box;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+
+      /* To fix the following issue:
+      1. Have translate on hover enabled (opposed to translate on click).
+      2. Wisit a website that has a dropdown menu that opens on hover.
+      3. Open the menu.
+      4. Hover over a word within that menu.
+      5. Incidentally move the cursor over the TransOver popup.
+      The hover menu gets closed.
+      */
+      pointer-events: none;
+    }
+
+    .pos_translation {
+      font-size: 1em;
+      line-height: 1.2em;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .from_lang {
+      color: grey;
+      font-size: 0.8em;
+      line-height: 1.2em;
+      margin-top: 2px;
+      margin-bottom: 3px;
+    }
+  </style>
+
+  <main translate="no"/>
+</template></svg>

@@ -104,6 +104,10 @@ body {
     font-weight: 500;
 }
 
+.header .navbar nav ul li .dropdown-menu {
+    z-index: 10 !important;
+}
+
 .header .navbar nav ul li a .arrowDown {
     fill: #252B42;
 }
@@ -111,6 +115,12 @@ body {
 .header .navbar .otherLinks {
     height: 63.384px;
     padding: 17.686px;
+    gap: 5.895px;
+}
+
+.header .mobile-nav .otherLinks {
+    height: 63.384px;
+    padding: 0px;
     gap: 5.895px;
 }
 
@@ -123,6 +133,19 @@ body {
     font-weight: 700;
     line-height: 28.297px;
     letter-spacing: 0.236px;
+    cursor: pointer;
+}
+
+.header .mobile-nav ul .otherLinks .text {
+    color: #23A6F0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16.507px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18.297px;
+    letter-spacing: 0.236px;
+    cursor: pointer;
 }
 
 .header .navbar .otherLinks div span {
@@ -134,6 +157,58 @@ body {
     font-weight: 400;
     line-height: 18.865px;
     letter-spacing: 0.236px;
+}
+
+.header .navbar .otherLinks div span img {
+    cursor: pointer;
+}
+
+.header .mobile-nav ul .otherLinks div span {
+    color: #23A6F0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14.148px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10.865px;
+    letter-spacing: 0.236px;
+    margin-top: -20px;
+}
+
+.header .mobile-nav .checkBtn {
+    display: none;
+    cursor: pointer;
+}
+
+.header .mobile-nav #check {
+    display: none;
+}
+
+.header .mobile-nav .right ul {
+    display: none;
+    list-style: none;
+}
+
+.header .mobile-nav .right ul li a {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16.507px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.297px;
+    letter-spacing: 0.236px;
+    text-decoration: none;
+    color: #737373;
+    text-decoration: none;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
+    transition: all 3s;
+}
+
+.header .mobile-nav .right ul li .active {
+    color: #23A6F0 !important;
 }
 
 .hero {
@@ -190,6 +265,7 @@ body {
     line-height: 22.168px;
     letter-spacing: 0.268px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .sell-banner {
@@ -226,6 +302,10 @@ body {
 .featured {
     padding-top: 100px;
     background: #FAFAFA;
+}
+
+.featured .content {
+    padding: 0 40px;
 }
 
 .featured .content .title {
@@ -266,11 +346,12 @@ body {
 }
 
 .featured .products .one {
-    height: 770px;
+    height: 100%;
     width: 100%;
     background: url('./assets/img/image-6.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    min-height: 300px;
 }
 
 .featured .products .one .overlay {
@@ -301,11 +382,13 @@ body {
     font-weight: 300;
     line-height: 20.5px;
     letter-spacing: 0.33px;
+    text-align: left;
 }
 
 
 .featured .products .one .overlay .content .icons {
-    margin-top: 440px;
+    position: absolute;
+    bottom: 8%;
 }
 
 .featured .products .one .overlay .content .icons .circle {
@@ -317,6 +400,7 @@ body {
     align-items: center;
     border-radius: 87.062px;
     background: #FFF;
+    cursor: pointer;
 }
 
 
@@ -324,38 +408,42 @@ body {
     background: url('./assets/img/card-cover-5.png'), lightgray 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 223px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     flex-shrink: 0;
+    min-height: 200px;
 }
 
 .featured .products .three {
     background: url('./assets/img/card-cover-6.png'), lightgray 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 223px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     flex-shrink: 0;
+    min-height: 200px;
 }
 
 .featured .products .four {
     background: url('./assets/img/card-cover-7.png'), lightgray 50%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 223px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     flex-shrink: 0;
+    min-height: 200px;
 }
 
 .featured .products .button {
     display: inline-flex;
-    padding: 14px 25px 0px 25px;
+    padding: 14px 25px 14px 25px;
     justify-content: center;
     align-items: center;
     background: #36B7AF;
+    cursor: pointer;
 }
 
-.featured .products .button p {
+.featured .products .button span {
     color: #FFF;
     text-align: center;
     font-family: Montserrat;
@@ -374,8 +462,11 @@ body {
 .popular .bg-img {
     background: url('./assets/img/image-9.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    min-height: 440px;
 }
 
 .popular .content {
@@ -598,6 +689,7 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .brands .card {
@@ -640,6 +732,7 @@ body {
     line-height: 20.613px;
     letter-spacing: 0.283px;
     text-align: left;
+    cursor: pointer;
 }
 
 .slider {
@@ -705,6 +798,7 @@ body {
     align-items: center;
     color: #737373;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .slider .topbar .category .active {
@@ -718,6 +812,7 @@ body {
     align-items: center;
     border-radius: 50%;
     border: 1.422px solid #BDBDBD;
+    cursor: pointer;
 }
 
 .slider .products {
@@ -801,10 +896,7 @@ body {
 }
 
 .points .content {
-    display: flex;
     padding: 15.905px;
-    align-items: center;
-    justify-content: space-between;
     gap: 15px;
 }
 
@@ -859,6 +951,10 @@ body {
     font-weight: 700;
     line-height: 42.623px;
     letter-spacing: 0.133px;
+}
+
+.social img {
+    cursor: pointer;
 }
 
 .footer {
@@ -941,6 +1037,7 @@ body {
     letter-spacing: 0.266px;
     padding: 10px 8px 10px 8px;
     width: 50%;
+    cursor: pointer;
 }
 
 .copyright {
@@ -959,4 +1056,230 @@ body {
     font-weight: 700;
     line-height: 21.967px;
     letter-spacing: 0.266px;
+}
+
+/* Media Queries */
+
+.large-screen {
+    display: none;
+}
+
+.vertical-img-1 {
+    height: 823.5px;
+}
+
+.horizontal-img-1 {
+    height: 400px;
+}
+
+@media screen and (min-width: 1280px) {
+    .large-screen {
+        display: block;
+    }
+
+    .header .top .content .topbarText {
+        font-size: 16.507px !important;
+    }
+
+    .header .navbar .logo h1 {
+        font-size: 28.297px !important;
+    }
+
+    .vertical-img-1 {
+        height: 823.5px !important;
+    }
+
+    .horizontal-img-1 {
+        height: 400px !important;
+    }
+
+    .sell-banner .content {
+        padding: 80px !important;
+    }
+
+    .sell-banner .content .title {
+        font-size: 40px !important;
+    }
+
+    .featured .products {
+        padding: 100px 250px 100px 250px !important;
+    }
+
+    .featured .products .one {
+        height: 648px !important;
+    }
+
+    .featured .products .one .overlay .content {
+        padding: 80px 50px 50px 50px !important;
+        width: 80% !important;
+    }
+
+    .featured .products .one .overlay .content .title {
+        line-height: 49.244px !important;
+    }
+
+    .featured .products .one .overlay .content .paragraph {
+        width: 100% !important;
+    }
+
+    .featured .products .button {
+        padding: 14px 25px 14px 25px !important;
+    }
+
+    .featured .products .button span {
+        font-size: 13.012px !important;
+        line-height: 10.518px !important;
+    }
+
+    .popular .bg-img {
+        min-height: 440px !important;
+    }
+
+    .slider {
+        padding-left: 120px !important;
+    }
+
+    .slider .bg-img {
+        height: 690px !important;
+    }
+
+    .footer .content .form input {
+        margin: 10px 15px 10px 15px !important;
+    }
+
+    .footer .content .form button {
+        padding: 10px 8px 10px 8px !important;
+    }
+
+    .copyright {
+        padding: 15px 85px !important;
+    }
+
+    .copyright h1 {
+        font-size: 13.648px !important;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .header .top .content .topbarText {
+        font-size: 14px;
+    }
+
+    .header .navbar .logo h1 {
+        font-size: 20px;
+    }
+
+    .header .mobile-nav .right .list {
+        width: 100%;
+        height: 100vh;
+        background-color: #FAFAFA;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding: 50px 30px 50px 30px;
+        z-index: 1;
+        top: 0;
+        left: 100%;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+
+    .header .mobile-nav #check {
+        display: none;
+        z-index: 20;
+        position: relative;
+    }
+
+    .header .mobile-nav .checkBtn {
+        display: block;
+        z-index: 20;
+        position: relative;
+    }
+
+    .header .mobile-nav #check:checked~ul {
+        left: 0%;
+    }
+
+    .vertical-img-1 {
+        height: 200px;
+    }
+
+    .horizontal-img-1 {
+        height: 200px;
+    }
+
+    .sell-banner .content {
+        padding: 40px;
+    }
+
+    .sell-banner .content .title {
+        font-size: 20px;
+    }
+
+    .featured .products {
+        padding: 50px 125px 50px 125px;
+    }
+
+    .featured .products .one .overlay .content {
+        padding: 40px 25px 25px 25px;
+    }
+
+    .featured .products .one .overlay .content .title {
+        font-size: 26px;
+        line-height: 25.244px;
+    }
+
+    .featured .products .one .overlay .content .paragraph {
+        width: 100%;
+    }
+
+    .featured .products .button {
+        padding: 7px 12.5px 7px 12.5px;
+    }
+
+    .featured .products .button span {
+        font-size: 11.012px;
+        line-height: 8.518px;
+    }
+
+    .popular .bg-img {
+        min-height: 460px;
+    }
+
+    .slider .bg-img {
+        height: 720px;
+    }
+
+    .footer .content .form input {
+        margin: 5px 7.5px 5px 7.5px;
+    }
+
+    .footer .content .form button {
+        padding: 5px 4px 5px 4px;
+    }
+
+    .copyright {
+        padding: 7.5px 42.5px;
+    }
+
+    .copyright h1 {
+        font-size: 11.648px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .slider {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .featured .products {
+        padding: 25px 62.5px 25px 62.5px;
+    }
 }

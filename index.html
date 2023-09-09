@@ -27,7 +27,8 @@
 <body>
     <header class="d-flex flex-column align-items-center header">
         <!-- Top Bar -->
-        <div class="d-flex justify-content-between align-items-start flex-shrink-0 top">
+        <div
+            class="d-flex justify-content-center align-items-center justify-content-xl-between align-items-xl-start flex-shrink-0 top">
             <div class="d-flex align-items-center">
                 <div class="d-flex align-items-center content">
                     <img class="topbarIcon" src="./assets/svg/phone.svg" alt="phone">
@@ -42,12 +43,12 @@
                     </span>
                 </div>
             </div>
-            <div class="d-flex align-items-center content">
+            <div class="d-xl-flex align-items-center content large-screen">
                 <span class="topbarText">
                     Follow Us and get a chance to win 80% off
                 </span>
             </div>
-            <div class="d-flex align-items-center content">
+            <div class="d-xl-flex align-items-center content large-screen">
                 <span class="topbarText">
                     Follow Us :
                 </span>
@@ -60,17 +61,25 @@
             </div>
         </div>
         <!-- Navbar -->
-        <div class="d-flex justify-content-end align-items-start navbar">
+        <div class="d-flex justify-content-between align-items-start navbar">
             <!-- Logo -->
             <div class="d-flex align-items-center logo">
                 <h1>Brand Name</h1>
             </div>
             <!-- Nav Items -->
-            <nav class="d-flex justify-content-center align-items-center">
+            <nav class="d-xl-flex justify-content-center align-items-center large-screen">
                 <ul class="list-unstyled d-flex">
                     <li class="mx-3"><a class="active" href="#">Home</a></li>
-                    <li class="mx-3 dropdownMenu"><a href="#">Shop<img class="arrowDown ml-1"
-                                src="./assets/svg/arrowdown.svg" alt="dropdown"></a></li>
+                    <li class="mx-3 dropdownMenu dropdown">
+                        <a href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Shop<img class="arrowDown ml-1" src="./assets/svg/arrowdown.svg"
+                                alt="dropdown"></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
                     <li class="mx-3"><a href="#">About</a></li>
                     <li class="mx-3"><a href="#">Blog</a></li>
                     <li class="mx-3"><a href="#">Contact</a></li>
@@ -78,7 +87,7 @@
                 </ul>
             </nav>
             <!-- Other Links -->
-            <div class="d-flex align-items-center otherLinks">
+            <div class="d-xl-flex align-items-center otherLinks large-screen">
                 <img src="./assets/svg/user.svg" alt="user">
                 <span class="text">Login / Register</span>
                 <div class="d-flex ml-2">
@@ -93,15 +102,57 @@
                     </span>
                 </div>
             </div>
+            <!-- Mobile Navbar -->
+            <div class="d-flex d-xl-none align-items-center py-3 mobile-nav">
+                <div class="right">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkBtn">
+                        <img src="./assets/svg/menu.svg" alt="menu">
+                    </label>
+                    <ul class="list">
+                        <li class="my-1"><a class="active" href="#">Home</a></li>
+                        <li class="my-1 dropdownMenu dropdown">
+                            <a href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Shop<img class="arrowDown ml-1" src="./assets/svg/arrowdown.svg"
+                                    alt="dropdown"></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="my-1"><a href="#">About</a></li>
+                        <li class="my-1"><a href="#">Blog</a></li>
+                        <li class="my-1"><a href="#">Contact</a></li>
+                        <li class="my-1"><a href="#">Pages</a></li>
+                        <li class="otherLinks mt-2"><img src="./assets/svg/user.svg" alt="user">
+                            <span class="text">Login / Register</span>
+                        </li>
+                        <li class="otherLinks">
+                            <div class="d-flex">
+                                <span class="mx-2">
+                                    <img src="./assets/svg/search.svg" alt="search">
+                                </span>
+                                <span class="mx-2">
+                                    <img src="./assets/svg/cart-blue.svg" alt="cart"> 1
+                                </span>
+                                <span class="mx-2">
+                                    <img src="./assets/svg/like-blue.svg" alt="like"> 1
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <!-- Hero -->
     <section class="d-flex justify-content-center align-items-center align-self-stretch hero">
         <div class="main">
             <div class="row">
-                <div class="col-5">
-                    <div
-                        style="height: 823.5px; width: 100%; background: url('./assets/img/image-1.png'), lightgray 50% / cover no-repeat;">
+                <div class="col-12 col-xl-5">
+                    <div class="vertical-img-1"
+                        style="width: 100%; background: url('./assets/img/image-1.png'); background-repeat: no-repeat; background-size: cover;">
                         <div class="d-flex flex-column justify-content-center align-items-start banner">
                             <div class="d-flex flex-column justify-content-center align-items-start content">
                                 <span class="total">99+</span>
@@ -111,11 +162,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-xl-7">
                     <div class="row">
                         <div class="col-12">
-                            <div
-                                style="height: 400px; width: 100%; background: url('./assets/img/image-5.png'), lightgray 50% / cover no-repeat;">
+                            <div class="horizontal-img-1 mt-4 m-xl-0"
+                                style="width: 100%; background: url('./assets/img/image-5.png'); background-repeat: no-repeat; background-size: cover;">
                                 <div class="d-flex flex-column justify-content-center align-items-start banner">
                                     <div class="d-flex flex-column justify-content-center align-items-start content">
                                         <span class="total">99+</span>
@@ -128,9 +179,9 @@
                         </div>
                     </div>
                     <div class="row mt-4">
-                        <div class="col-6">
-                            <div
-                                style="height: 400px; width: 100%; background: url('./assets/img/image-3.png'), lightgray 50% / cover no-repeat;">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="horizontal-img-1"
+                                style="width: 100%; background: url('./assets/img/image-3.png'); background-repeat: no-repeat; background-size: cover;">
                                 <div class="d-flex flex-column justify-content-center align-items-start banner">
                                     <div class="d-flex flex-column justify-content-center align-items-start content">
                                         <span class="total">99+</span>
@@ -140,9 +191,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div
-                                style="height: 400px; width: 100%; background: url('./assets/img/image-2.png'), lightgray 50% / cover no-repeat;">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="horizontal-img-1 mt-4 m-md-0 m-lg-0 m-xl-0"
+                                style="width: 100%; background: url('./assets/img/image-2.png'); background-repeat: no-repeat; background-size: cover;">
                                 <div class="d-flex flex-column justify-content-center align-items-start banner">
                                     <div class="d-flex flex-column justify-content-center align-items-start content">
                                         <span class="total">99+</span>
@@ -176,7 +227,7 @@
         </div>
         <div class="products">
             <div class="row">
-                <div class="col-7">
+                <div class="col-12 col-lg-7">
                     <div class="one">
                         <div class="w-100 h-100 overlay">
                             <div class="content">
@@ -198,26 +249,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-12">
+                <div class="col-12 col-lg-4">
+                    <div class="row mt-4 mt-lg-0">
+                        <div class="col-12 col-md-4 col-lg-12">
                             <div class="two d-flex align-items-end justify-content-center pb-3">
                                 <span class="button">
-                                    <p>CITIZEN</p>
+                                    <span>CITIZEN</span>
                                 </span>
                             </div>
                         </div>
-                        <div class="col-12 pt-4">
+                        <div class="col-12 col-md-4 col-lg-12 pt-4 pt-md-0 pt-lg-4">
                             <div class="three d-flex align-items-end justify-content-center pb-3">
                                 <span class="button">
-                                    <p>CITIZEN</p>
+                                    <span>CITIZEN</span>
                                 </span>
                             </div>
                         </div>
-                        <div class="col-12 pt-4">
+                        <div class="col-12 col-md-4 col-lg-12 pt-4 pt-md-0 pt-lg-4">
                             <div class="four d-flex align-items-end justify-content-center pb-3">
                                 <span class="button">
-                                    <p>CITIZEN</p>
+                                    <span>CITIZEN</span>
                                 </span>
                             </div>
                         </div>
@@ -227,12 +278,12 @@
         </div>
     </section>
     <!-- Most Popular -->
-    <section class="popular">
+    <section class="popular overflow-hidden">
         <div>
             <div class="row">
-                <div class="col-6 bg-img">
+                <div class="col-12 col-lg-6 bg-img d-none d-lg-block">
                 </div>
-                <div class="col-6 content">
+                <div class="col-12 col-lg-6 content">
                     <h1 class="title">
                         MOST POPULAR BAGS
                     </h1>
@@ -261,7 +312,7 @@
         </div>
         <div class="products">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="one"></div>
                     <div class="content">
                         <div class="title">
@@ -276,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="two"></div>
                     <div class="content">
                         <div class="title">
@@ -291,7 +342,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="three"></div>
                     <div class="content">
                         <div class="title">
@@ -306,7 +357,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="four"></div>
                     <div class="content">
                         <div class="title">
@@ -340,7 +391,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card mt-3 mt-md-0">
             <div class="row">
                 <div class="col-6">
                     <div class="ml-3 w-100 h-100 d-flex flex-column align-items-start justify-content-start">
@@ -354,7 +405,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card mt-3 mt-md-0">
             <div class="row">
                 <div class="col-6">
                     <div class="ml-3 w-100 h-100 d-flex flex-column align-items-start justify-content-start">
@@ -372,7 +423,7 @@
     <!-- Slider -->
     <section class="slider">
         <div class="row">
-            <div class="col-4 bg-img">
+            <div class="col-12 col-lg-4 bg-img d-none d-lg-block">
                 <div class="p-3">
                     <div class="title">
                         Jewellery
@@ -382,12 +433,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-7 ml-3">
-                <div class="topbar d-flex align-items-center">
+            <div class="col-12 col-lg-7 ml-lg-3">
+                <div class="topbar d-flex flex-column flex-md-row align-items-center">
                     <div class="title">
                         BEST SELLING
                     </div>
-                    <div class="category">
+                    <div class="category mt-3 mt-md-0">
                         <div class="active mx-3">
                             Necklace
                         </div>
@@ -398,7 +449,7 @@
                             Earrings
                         </div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex mt-3 mt-md-0">
                         <div class="circle mr-1">
                             <img src="./assets/svg/arrowleft.svg" alt="previous">
                         </div>
@@ -408,7 +459,7 @@
                     </div>
                 </div>
                 <div class="products row">
-                    <div class="col-4">
+                    <div class="col-5 col-md-4 col-lg-4 mt-4 mt-md-0">
                         <div class="d-flex flex-column align-items-center justify-content-center">
                             <div class="image">
                                 <img src="./assets/img/image-16.png" alt="product">
@@ -427,7 +478,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5 col-md-4 col-lg-4 mt-4 mt-md-0">
                         <div class="d-flex flex-column align-items-center justify-content-center">
                             <div class="image">
                                 <img src="./assets/img/image-16.png" alt="product">
@@ -446,7 +497,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5 col-md-4 col-lg-4 mt-4 mt-md-0">
                         <div class="d-flex flex-column align-items-center justify-content-center">
                             <div class="image">
                                 <img src="./assets/img/image-16.png" alt="product">
@@ -465,8 +516,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 my-3"></div>
-                    <div class="col-4">
+                    <div class="col-5 col-md-4 col-lg-4 mt-4 mt-md-0">
                         <div class="d-flex flex-column align-items-center justify-content-center">
                             <div class="image">
                                 <img src="./assets/img/image-16.png" alt="product">
@@ -485,7 +535,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5 col-md-4 col-lg-4 mt-4 mt-md-0">
                         <div class="d-flex flex-column align-items-center justify-content-center">
                             <div class="image">
                                 <img src="./assets/img/image-16.png" alt="product">
@@ -504,7 +554,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5 col-md-4 col-lg-4 mt-4 mt-md-0">
                         <div class="d-flex flex-column align-items-center justify-content-center">
                             <div class="image">
                                 <img src="./assets/img/image-16.png" alt="product">
@@ -530,8 +580,8 @@
     <!-- points -->
     <section class="points w-100 h-100">
         <div class="row">
-            <div class="col-3">
-                <div class="content">
+            <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                <div class="content d-flex justify-content-start justify-content-md-between align-items-center">
                     <div class="number">
                         1.
                     </div>
@@ -545,8 +595,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="content">
+            <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                <div class="content d-flex justify-content-start justify-content-md-between align-items-center">
                     <div class="number">
                         2.
                     </div>
@@ -560,8 +610,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="content">
+            <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                <div class="content d-flex justify-content-start justify-content-md-between align-items-center">
                     <div class="number">
                         3.
                     </div>
@@ -575,8 +625,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="content">
+            <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                <div class="content d-flex justify-content-start justify-content-md-between align-items-center">
                     <div class="number">
                         4.
                     </div>
@@ -594,32 +644,32 @@
     </section>
     <!-- Sponsors -->
     <section class="sponsors w-100 h-100">
-        <div class="row py-4 align-items-center justify-content-center">
-            <div class="col-2">
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+            <div class="my-4 mx-4">
                 <img src="./assets/svg/fa-brands-1.svg" alt="sponsors">
             </div>
-            <div class="col-2">
+            <div class="my-4 mx-4">
                 <img src="./assets/svg/fa-brands-2.svg" alt="sponsors">
             </div>
-            <div class="col-2">
+            <div class="my-4 mx-4">
                 <img src="./assets/svg/fa-brands-3.svg" alt="sponsors">
             </div>
-            <div class="col-2">
+            <div class="my-4 mx-4">
                 <img src="./assets/svg/fa-brands-4.svg" alt="sponsors">
             </div>
-            <div class="col-2">
+            <div class="my-4 mx-4">
                 <img src="./assets/svg/fa-brands-5.svg" alt="sponsors">
             </div>
-            <div class="col-2">
+            <div class="my-4 mx-4">
                 <img src="./assets/svg/fa-brands-6.svg" alt="sponsors">
             </div>
         </div>
     </section>
     <!-- social -->
     <section class="social w-100 h-100">
-        <div class="d-flex align-items-center justify-content-between py-4">
-            <div class="logo">BrandName</div>
-            <div class="d-flex align-items-center justify-content-around">
+        <div class="d-flex flex-wrap align-items-center justify-content-between">
+            <div class="logo my-4">BrandName</div>
+            <div class="d-flex my-4 align-items-center justify-content-around">
                 <img class="mx-2" width="24" height="24" src="./assets/svg/facebook-filled.svg" alt="facebook">
                 <img class="mx-2" width="24" height="24" src="./assets/svg/instagram-outlined.svg" alt="instagram">
                 <img class="mx-2" width="24" height="24" src="./assets/svg/twitter-outlined.svg" alt="twitter">
@@ -629,7 +679,7 @@
     <!-- footer -->
     <footer class="footer w-100 h-100">
         <div class="row pt-4 pb-2">
-            <div class="col-2">
+            <div class="col-12 col-md-3 col-lg-2">
                 <div class="content">
                     <div class="title">
                         Top Categories
@@ -644,7 +694,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-12 col-md-3 col-lg-2">
                 <div class="content">
                     <div class="title">
                         Top Designer
@@ -660,7 +710,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-12 col-md-3 col-lg-2">
                 <div class="content">
                     <div class="title">
                         Features
@@ -672,7 +722,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-4 col-lg-3">
                 <div class="content">
                     <div class="title">
                         Customer Service
@@ -685,7 +735,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-3 m-0 p-0">
+            <div class="col-12 col-md-4 col-lg-3 m-0 p-0">
                 <div class="content m-0 p-0">
                     <div class="title">
                         Get In Touch
@@ -698,7 +748,7 @@
             </div>
         </div>
     </footer>
-    <div class="copyright">
+    <div class="copyright mt-4 mt-md-0">
         <h1>All Right Reserved BRANDNAME 2023</h1>
     </div>
 </body>
