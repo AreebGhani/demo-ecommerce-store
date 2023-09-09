@@ -43,6 +43,7 @@ body {
 .header .top .content .topbarIcon {
     width: 18.865px;
     height: 18.865px;
+    cursor: pointer;
 }
 
 .header .top .content .topbarText {
@@ -213,6 +214,26 @@ body {
 
 .header .mobile-nav .right ul li .active {
     color: #23A6F0 !important;
+}
+
+.header .mobile-nav .right ul li .content .topbarIcon {
+    width: 18.865px;
+    height: 18.865px;
+    cursor: pointer;
+}
+
+.header .mobile-nav .right ul li .content .topbarText {
+    color: #737373;
+    font-family: Montserrat;
+    font-size: 16.507px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18.297px;
+    letter-spacing: 0.236px;
+}
+
+.header .mobile-nav .right ul li .content .socialIcons {
+    gap: 12.484px;
 }
 
 .hero {
